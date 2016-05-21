@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'For use KeyboardHandler just install it via cocoapods and create instance of class with convenience init method. You can init instance with special offset - default offset is 0.'
+  s.description      = 'For use KeyboardHandler just install it via cocoapods and create instance of class with convenience init method. You can init KeyboardHandler with special offset - default offset is 0.'
 
   s.homepage         = 'https://github.com/nov-/KeyboardHandler'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

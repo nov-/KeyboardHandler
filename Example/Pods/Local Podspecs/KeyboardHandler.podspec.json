@@ -1,9 +1,9 @@
 {
   "name": "KeyboardHandler",
   "version": "0.1.0",
-  "summary": "A short description of KeyboardHandler.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/KeyboardHandler",
+  "summary": "KeyboardHandler is a useful tool for handling keyboard behaviour and dynamicaly change view constraint.",
+  "description": "For use KeyboardHandler just install it via cocoapods and create instance of class with convenience init method. You can init instance with special offset - default offset is 0.",
+  "homepage": "https://github.com/nov-/KeyboardHandler",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,13 @@
     "Smirnov Yuriy": "nov-@mail.ru"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/KeyboardHandler.git",
+    "git": "https://github.com/nov-/KeyboardHandler.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/nov__",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "KeyboardHandler/Classes/**/*"
+  "source_files": "KeyboardHandler/Classes/**/*",
+  "frameworks": "UIKit"
 }

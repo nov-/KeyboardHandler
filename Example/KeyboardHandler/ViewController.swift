@@ -19,10 +19,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //configurate KeyboardHandler, convenience init
         keyboardHandler = KeyboardHandler(
             constraint: bottomConstraint,
             forView: button
         )
+        
     }
 
 }
@@ -35,6 +37,19 @@ extension ViewController {
         
         view.endEditing(true)   //hide keyboard
         
+    }
+    
+}
+
+//MARK: - UITextFieldDelegate
+
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }

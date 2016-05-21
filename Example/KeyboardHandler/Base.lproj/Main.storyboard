@@ -31,9 +31,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tap on me..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZZ-Bx-SUU">
-                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <rect key="frame" x="20" y="480" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="tNw-Pu-Clf"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,7 +46,7 @@
                             <constraint firstAttribute="trailing" secondItem="xZZ-Bx-SUU" secondAttribute="trailing" constant="20" id="VOc-8p-u5o"/>
                             <constraint firstItem="xZZ-Bx-SUU" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="WNL-pL-VE1"/>
                             <constraint firstAttribute="trailing" secondItem="dQ7-Bk-SaG" secondAttribute="trailing" id="byd-eX-FV3"/>
-                            <constraint firstItem="xZZ-Bx-SUU" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="gtE-CH-1ve"/>
+                            <constraint firstItem="dQ7-Bk-SaG" firstAttribute="top" secondItem="xZZ-Bx-SUU" secondAttribute="bottom" constant="40" id="ngp-f3-PQh"/>
                             <constraint firstItem="dQ7-Bk-SaG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nsK-yT-T5Z"/>
                         </constraints>
                     </view>
