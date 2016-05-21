@@ -12,7 +12,7 @@
 		2A6B57D4EF3CBB6B56937E23670B02D3 /* Pods-KeyboardHandler_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E89EDA879FD1E6EBD64A6B4AD47369 /* Pods-KeyboardHandler_Tests-dummy.m */; };
 		3BEAE0EFCEF3366C9909F20C1A8D8F02 /* Pods-KeyboardHandler_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2FFCC9CD4D365B1E66A92FC8124006 /* Pods-KeyboardHandler_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FABC01F2DA6048690A0C17A26DB9111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		915D7DB06980BF7714117BD28F975E15 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87952BEC64784B315352CC165D46390 /* ReplaceMe.swift */; };
+		98AFFBFC1CF0E43D00AAC543 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AFFBFB1CF0E43D00AAC543 /* KeyboardHandler.swift */; };
 		CAD0CC0CEACBACF5B197B42DB17FE1F0 /* KeyboardHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DFEFD5E7230DA82EA12C1C48916340 /* KeyboardHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1961B519D9823205A5A6EC937C990C6 /* KeyboardHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7F94B1B03F007E3ED6D55D59A5722 /* KeyboardHandler-dummy.m */; };
 		FB661EB1E4CA18CF9500C2051F037653 /* Pods-KeyboardHandler_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E8BF96E552C9D7C3052188FC33480 /* Pods-KeyboardHandler_Example-dummy.m */; };
@@ -51,10 +51,10 @@
 		935F690BEB6517E46A8E162190D50CA5 /* Pods-KeyboardHandler_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KeyboardHandler_Tests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94156AEC41E6E136B29541EE964E7CB8 /* Pods-KeyboardHandler_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeyboardHandler_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98AFFBFB1CF0E43D00AAC543 /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		99DF7E91E9DC2D33279EB4EBB73A092E /* Pods-KeyboardHandler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeyboardHandler_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9A5E8BF96E552C9D7C3052188FC33480 /* Pods-KeyboardHandler_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeyboardHandler_Example-dummy.m"; sourceTree = "<group>"; };
 		9B77D25E32037B7AF63A27D41F031F0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B87952BEC64784B315352CC165D46390 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2FF0BC4C08655C2569D2CA24A5FB981 /* KeyboardHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeyboardHandler.modulemap; sourceTree = "<group>"; };
 		DD7A15E6CB99F47595BC24B04FBD87A7 /* Pods_KeyboardHandler_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyboardHandler_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 		7180C82F2D4CD36F923355179648B877 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B87952BEC64784B315352CC165D46390 /* ReplaceMe.swift */,
+				98AFFBFB1CF0E43D00AAC543 /* KeyboardHandler.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1961B519D9823205A5A6EC937C990C6 /* KeyboardHandler-dummy.m in Sources */,
-				915D7DB06980BF7714117BD28F975E15 /* ReplaceMe.swift in Sources */,
+				98AFFBFC1CF0E43D00AAC543 /* KeyboardHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54104C579BBC7B86D9B51B69E903283E /* KeyboardHandler.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -541,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54104C579BBC7B86D9B51B69E903283E /* KeyboardHandler.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
