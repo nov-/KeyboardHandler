@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-KeyboardHandler no additional requirements are needed, used UIKit only. Swift 2.2 compatibility.
+KeyboardHandler no additional requirements are needed, used UIKit only. It is compatible with Cocoapods 1.0 & Swift 2.2 version.
 
 ## Installation
 
