@@ -11,13 +11,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+KeyboardHandler no additional requirements are needed, used UIKit only. Swift 2.2 compatibility.
+
 ## Installation
 
 KeyboardHandler is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KeyboardHandler"
+pod 'KeyboardHandler'
 ```
 
 ## Author
